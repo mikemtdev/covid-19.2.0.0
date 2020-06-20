@@ -15,6 +15,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
+import Navbar from 'components/Navbar/Navbar';
 
 // Import root app
 import App from 'containers/App';
@@ -43,6 +44,7 @@ const render = messages => {
     <Provider store={store}>
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
+          <Navbar />
           <App />
         </ConnectedRouter>
       </LanguageProvider>
