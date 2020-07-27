@@ -7,15 +7,17 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import messages from './messages';
 import Search from 'components/Search/Search';
 import Stats from 'components/Stats/Stats';
+import messages from './messages';
+import Countries from '../../components/Countries/Countries';
 
 export default function HomePage() {
   return (
     <div>
       <Search />
       <Stats />
+      <Countries />
     </div>
   );
 }
